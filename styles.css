@@ -5,12 +5,11 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Lexend Deca', sans-serif;
+    
 }
 
 .container {
     background: #f2f2f2;
-    height: 657px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,12 +18,11 @@
 
 .boxes {
     display: grid;
-    grid-template-columns: repeat(3, 310px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.box {
+box {
     padding: 30px;
-    height: 400px;
 }
 
 .box1 {
@@ -44,39 +42,38 @@ img {
 }
 
 h1 {
-    font-weight: 700;
+    font-family: 'Lexend Deca', sans-serif;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: #f2f2f2;
+    font-weight: 700;
 }
 
 p {
-    font-weight: 400;
-    margin-bottom: 50px;
     color: rgba(255, 255, 255, 0.75);
+    font-weight: 400;
 }
 
 input {
-    background: #f2f2f2;
-    border-style: none;
+    font-weight: 400;
     border-radius: 30px;
     width: 70%;
     height: 40px;
-}
-
-.input1 {
-    color: #e38826;
-}
-
-.input2 {
-    color: #006970;
-}
-
-.input3 {
-    color: #004241;
+    cursor: pointer;
 }
 
 @media (min-width: 376px) {
+
+    .container {
+        height: 657px;
+    }
+    
+    .box {
+        padding: 30px;
+        padding-right: 0;
+        padding-left: 45px;
+        height: 400px;
+    }
     
     .box1 {
         border-top-left-radius: 5px;
@@ -87,28 +84,43 @@ input {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
-    
+
     p {
-        padding-right: 25px;
+        text-align: left;
+        padding-right: 53px;
         margin-bottom: 50px;
-        color: rgba(255, 255, 255, 0.75);
     }
     
-} 
+    input {
+        border: 2px solid #f2f2f2;
+        color: #f2f2f2;
+    }
+    
+    .input1 {
+        background: #e38826;
+    }
+    
+    .input2 {
+        background: #006970;
+    }
+    
+    .input3 {
+        background: #004241;
+    }
+    
+}
 
 @media (max-width: 375px) {
-    .container {
-        padding: 20px;
-    }
 
     .boxes {
-        display: grid;
-        grid-template-columns: repeat(1, 310px);
+        margin: 20px;
     }
 
     .box {
-        padding: 20px;
-        height: 350px;
+        padding: 30px;
+        padding-left: 40px;
+        height: 370px;
+        width: 300px;
     }
     
     .box1 {
@@ -116,9 +128,41 @@ input {
         border-top-right-radius: 5px;
     }
     
-    .box3 {       
+    .box3 {
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-    }  
+    }
+
+    img {
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #f2f2f2;
+    }
+    
+    p {
+        padding-right: 60px;
+        margin-bottom: 30px;
+    }
+    
+    input {
+        background: #f2f2f2;
+        border-style: none;
+    }
+ 
+    .input1 {
+        color: #e38826;
+    }
+    
+    .input2 {
+        color: #006970;
+    }
+    
+    .input3 {
+        color: #004241;
+    }
 
 }
