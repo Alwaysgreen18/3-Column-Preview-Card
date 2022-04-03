@@ -118,7 +118,7 @@ input {
 
     .box {
         padding: 30px;
-        padding-left: 40px;
+        padding-left: 70px;
         height: 370px;
         width: 300px;
     }
@@ -144,7 +144,7 @@ input {
     }
     
     p {
-        padding-right: 60px;
+        padding-right: 30px;
         margin-bottom: 30px;
     }
     
