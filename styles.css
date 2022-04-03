@@ -54,7 +54,7 @@ p {
     font-weight: 400;
 }
 
-input {
+.button {
     font-weight: 400;
     border-radius: 30px;
     width: 70%;
@@ -91,20 +91,20 @@ input {
         margin-bottom: 50px;
     }
     
-    input {
+    .button {
         border: 2px solid #f2f2f2;
         color: #f2f2f2;
     }
     
-    .input1 {
+    .button1 {
         background: #e38826;
     }
     
-    .input2 {
+    .button2 {
         background: #006970;
     }
     
-    .input3 {
+    .button3 {
         background: #004241;
     }
     
@@ -148,20 +148,20 @@ input {
         margin-bottom: 30px;
     }
     
-    input {
+    .button {
         background: #f2f2f2;
         border-style: none;
     }
  
-    .input1 {
+    .button1 {
         color: #e38826;
     }
     
-    .input2 {
+    .button2 {
         color: #006970;
     }
     
-    .input3 {
+    .button3 {
         color: #004241;
     }
 
